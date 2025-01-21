@@ -1,6 +1,6 @@
 # LevelUp: Bridging Employability Gaps Among Women in Rural and Urban India
 
-## 🎯 Mission
+## 🎯 Mission 
 
 LevelUp is dedicated to empowering women in India by addressing employability gaps through innovative, data-driven solutions. By leveraging insights from the Periodic Labour Force Survey (PLFS), our platform aims to bridge the skill and opportunity divide, fostering economic independence and workforce inclusion.
 
