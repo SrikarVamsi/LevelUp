@@ -43,7 +43,44 @@ LevelUp provides a personalized and scalable platform to enhance women's employa
 
 ---
 
-## 🚀 Setup Instructions
+## 🚀 UI Screens
+
+### **User Interface Preview**
+
+<p align="center">
+  <img src="https://github.com/SrikarVamsi/LevelUp/blob/main/UI/1.jpeg" alt="UI Screenshot 1" width="400">
+</p>
+
+<p align="center">
+  <img src="https://github.com/SrikarVamsi/LevelUp/blob/main/UI/2.jpeg" alt="UI Screenshot 2" width="400">
+</p>
+
+<p align="center">
+  <img src="https://github.com/SrikarVamsi/LevelUp/blob/main/UI/3.jpeg" alt="UI Screenshot 3" width="400">
+</p>
+
+<p align="center">
+  <img src="https://github.com/SrikarVamsi/LevelUp/blob/main/UI/WhatsApp%20Image%202025-02-01%20at%2015.53.44.jpeg" alt="UI Screenshot 4" width="400">
+</p>
+
+<p align="center">
+  <img src="https://github.com/SrikarVamsi/LevelUp/blob/main/UI/WhatsApp%20Image%202025-02-01%20at%2015.54.57.jpeg" alt="UI Screenshot 5" width="400">
+</p>
+
+<p align="center">
+  <img src="https://github.com/SrikarVamsi/LevelUp/blob/main/UI/WhatsApp%20Image%202025-02-01%20at%2015.55.23.jpeg" alt="UI Screenshot 6" width="400">
+</p>
+
+<p align="center">
+  <img src="https://github.com/SrikarVamsi/LevelUp/blob/main/UI/WhatsApp%20Image%202025-02-01%20at%2015.55.43.jpeg" alt="UI Screenshot 7" width="400">
+</p>
+
+<p align="center">
+  <img src="https://github.com/SrikarVamsi/LevelUp/blob/main/UI/WhatsApp%20Image%202025-02-01%20at%2015.55.56.jpeg" alt="UI Screenshot 8" width="400">
+</p>
+
+
+## 🛠️ Setup Instructions
 
 ### 1. Clone the Repository
 ```bash
@@ -75,7 +112,6 @@ uvicorn app.main:app --reload
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-
 </p>
 
 ### Data Analysis Tools
