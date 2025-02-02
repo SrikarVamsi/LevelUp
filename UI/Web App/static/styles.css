@@ -1,0 +1,161 @@
+/* Background styling */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #ffe6e6, #fff5e6);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container styling */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.left,
+.right {
+  padding: 30px;
+}
+
+.left {
+  flex: 2;
+  border-right: 1px solid #eee;
+}
+
+.right {
+  flex: 1;
+  min-width: 300px;
+}
+
+h1,
+h2 {
+  color: #b30059;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: bold;
+  color: #b30059;
+}
+
+input[type="text"],
+textarea {
+  width: calc(100% - 12px);
+  padding: 6px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"],
+.download-btn {
+  background-color: #b30059;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+input[type="submit"]:hover,
+.download-btn:hover {
+  background-color: #99004d;
+}
+
+.job {
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.job:last-child {
+  border-bottom: none;
+}
+
+.job a {
+  text-decoration: none;
+  color: #b30059;
+  font-weight: bold;
+}
+
+.explanation {
+  background-color: #fff0f5;
+  border-left: 4px solid #b30059;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  white-space: pre-wrap;
+}
+
+/* Chat window styling */
+.chat-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.chat-log {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.chat-entry {
+  margin: 5px 0;
+}
+
+.chat-entry.user {
+  text-align: right;
+  color: #0066cc;
+}
+
+.chat-entry.bot {
+  text-align: left;
+  color: #b30059;
+}
+
+/* Footer styling */
+.footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Loading overlay styling */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  font-size: 24px;
+  color: #b30059;
+}

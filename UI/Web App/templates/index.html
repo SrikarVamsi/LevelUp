@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Youth Employability</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="loading-overlay" id="loading-overlay">
+      <div>
+        <i class="fa-solid fa-spinner fa-spin"></i> We are searching for you...
+      </div>
+    </div>
+    <div class="container">
+      <div class="left">
+        <h1><i class="fa-solid fa-briefcase"></i> Youth Employability</h1>
+        <form method="post" onsubmit="showLoading()">
+          <label for="job_title">Job Title:</label><br />
+          <input
+            type="text"
+            name="job_title"
+            id="job_title"
+            placeholder="e.g., Cook, Maid"
+            required
+          /><br />
+
+          <label for="location">Preferred Location:</label><br />
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="City or region"
+            required
+          /><br />
+
+          <label for="age">Age:</label><br />
+          <input type="text" name="age" id="age" placeholder="Your age" /><br />
+
+          <label for="education">Highest Educational Qualification:</label
+          ><br />
+          <input
+            type="text"
+            name="education"
+            id="education"
+            placeholder="e.g., High School, Diploma"
+            required
+          /><br />
+
+          <label for="experience">Years of Experience:</label><br />
+          <input
+            type="text"
+            name="experience"
+            id="experience"
+            placeholder="e.g., 3"
+            required
+          /><br />
+
+          <input type="submit" value="Search Jobs" id="submit-btn" />
+        </form>
+
+        {% if job_suggestions %}
+        <hr />
+        <h2>Job Suggestions</h2>
+        {% for job in job_suggestions %}
+        <div class="job">
+          <strong>{{ job['title'] }}</strong> &nbsp;
+          <a href="{{ job['url'] }}" target="_blank">
+            <i class="fa-solid fa-up-right-from-square"></i> View Details
+          </a>
+          <div class="explanation">
+            <p>{{ job['summary'] }}</p>
+          </div>
+        </div>
+        {% endfor %}
+        <div style="text-align: center">
+          <a href="{{ url_for('download_jobs') }}" class="download-btn">
+            <i class="fa-solid fa-download"></i> Download Job Details as PDF
+          </a>
+        </div>
+        {% endif %}
+        <div class="footer">Made with ❤️ by LevelUp</div>
+      </div>
+      <div class="right">
+        <h2>Chat with Us</h2>
+        <div class="chat-container">
+          <div id="chat-log" class="chat-log">
+            {% for message in chat_history %}
+            <div class="chat-entry {{ message['sender'] }}">
+              <strong>{{ message['sender']|capitalize }}:</strong> {{
+              message['text'] }}
+            </div>
+            {% endfor %}
+          </div>
+          <form id="chat-form" method="post" action="{{ url_for('chat') }}">
+            <textarea
+              name="chat_message"
+              id="chat_message"
+              rows="2"
+              placeholder="Ask about any job details..."
+              required
+            ></textarea>
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+        <div class="footer">Made with ❤️ by LevelUp</div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
